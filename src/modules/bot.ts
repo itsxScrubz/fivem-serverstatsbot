@@ -21,7 +21,6 @@ export default class extends Client {
 			intents,
 		});
 		this.token = token;
-		// TODO: Logging
 		startupLog();
 		console.log('Initializing bot...');
 		this.once('ready', () => {
@@ -29,7 +28,6 @@ export default class extends Client {
 			this.user.setActivity(Server.serverName, {
 				type: ActivityType.Watching,
 			});
-			// TODO: Logging
 			console.log('Bot started!!');
 			// Post initial status update.
 			void this.postMessage(process.env.UPDATE_CHANNEL_ID, generateStatusEmbed(), true);

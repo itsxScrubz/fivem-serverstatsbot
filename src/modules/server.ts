@@ -31,7 +31,6 @@ export default class {
 	 * @returns {Promise<void>} void
 	 */
 	static async getStats(): Promise<void> {
-		// TODO: Logging
 		console.log('Fetching server stats...');
 		// Fetch stats.
 		const stats = await fetch(this.serverList + this.id, {
