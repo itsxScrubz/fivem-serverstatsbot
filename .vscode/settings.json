@@ -1,0 +1,38 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.sortImports": true
+	},
+	"files.exclude": {
+		"**/node_modules": true,
+		"**/pnpm-lock.yaml": true,
+		"**/.yarn": true,
+		"**/.pnp.cjs": true,
+		"**/.pnp.loader.mjs": true,
+		"**/yarn.lock": true,
+		"**/package-lock.json": true,
+		"**/.turbo": true,
+		"**/.eslintcache": true
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/pnpm-lock.yaml": true,
+		"**/.yarn": true,
+		"**/.pnp.cjs": true,
+		"**/.pnp.loader.mjs": true,
+		"**/yarn.lock": true,
+		"**/package-lock.json": true,
+		"**/bin": true,
+		"**/lib": true,
+		"**/dist": true,
+		"**/build": true,
+		"**/.vscode": true,
+		"**/.turbo": true,
+		"**/.eslintcache": true
+	},
+	"npm.exclude": []
+}

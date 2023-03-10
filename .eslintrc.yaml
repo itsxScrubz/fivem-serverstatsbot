@@ -1,0 +1,52 @@
+parser: '@typescript-eslint/parser'
+env:
+  node: true
+  browser: false
+extends:
+  - plugin:@typescript-eslint/recommended
+  - plugin:@typescript-eslint/recommended-requiring-type-checking
+  - plugin:import/recommended
+  - prettier
+  - xo
+plugins:
+  - node
+  - '@typescript-eslint'
+  - prettier
+  - unicorn
+parserOptions:
+  ecmaVersion: latest
+  sourceType: module
+  project: ./tsconfig.json
+  tsconfigRootDir: .
+settings:
+  import/parsers:
+    '@typescript-eslint/parser':
+      - .ts
+  import/resolver:
+    typescript:
+rules:
+  prettier/prettier: 2
+  unicorn/filename-case:
+    - 2
+    - case: camelCase
+  unicorn/prefer-module: 2
+  unicorn/prefer-node-protocol: 2
+  '@typescript-eslint/no-floating-promises':
+    - 2
+    - ignoreIIFE: true
+  '@typescript-eslint/no-misused-promises': 2
+  capitalized-comments: 0
+  no-unused-vars: 0
+  no-void:
+    - 0
+    - allowAsStatement: true
+  padding-line-between-statements: 0
+  lines-between-class-members: 0
+  no-negated-condition: 0
+  no-warning-comments: 0
+  object-curly-spacing:
+    - 2
+    - always
+  curly:
+    - 2
+    - multi

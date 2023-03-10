@@ -1,0 +1,12 @@
+{
+	"ESM __dirname": {
+		"prefix": "!dirname",
+		"scope": "typescript,javascript",
+		"description": "Grabs current dirname with esm. Not needed with tsup + shims: true",
+		"body": [
+			"import { dirname } from 'node:path';",
+			"import { fileURLToPath } from 'node:url';",
+			"const __dirname = dirname(fileURLToPath(import.meta.url));"
+		]
+	}
+}

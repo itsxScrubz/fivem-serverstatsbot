@@ -1,0 +1,61 @@
+export type CFXPlayerAPIData = {
+	endpoint: string;
+	id: number;
+	identifiers: string[];
+	name: string;
+	ping: number;
+};
+
+export type CFXServerAPIData = {
+	Endpoint: string;
+	Data: {
+		clients: number;
+		gametype: string;
+		hostname: string;
+		mapname: string;
+		sv_maxclients: number;
+		enhancedHostSupport: boolean;
+		requestSteamTicket: string;
+		resources: string[];
+		server: string;
+		vars: {
+			Credits: string;
+			activitypubFeed: string;
+			banner_connecting: string;
+			banner_detail: string;
+			discord: string;
+			gamename: string;
+			locale: string;
+			onesync_enabled: string;
+			sv_enforceGameBuild: string;
+			sv_enhancedHostSupport: string;
+			sv_lan: string;
+			sv_licenseKeyToken: string;
+			sv_maxClients: string;
+			sv_projectDesc: string;
+			sv_projectName: string;
+			sv_pureLevel: string;
+			sv_scriptHookAllowed: string;
+			tags: string;
+			'txAdmin-version': string;
+			premium: string;
+			'banner_connecting#original_url': string;
+			'banner_detail#original_url': string;
+		};
+		selfReportedClients: number;
+		players: CFXPlayerAPIData[];
+		ownerID: number;
+		private: boolean;
+		fallback: boolean;
+		connectEndPoints: string[];
+		upvotePower: number;
+		burstPower: number;
+		support_status: string;
+		svMaxclients: number;
+		ownerName: string;
+		ownerProfile: string;
+		ownerAvatar: string;
+		lastSeen: string;
+		iconVersion: number;
+	};
+};

@@ -1,0 +1,18 @@
+# Default Ignores.
+**/node_modules
+**/.yarn
+**/.pnp.cjs
+**/.pnp.loader.mjs
+**/bin
+**/lib
+**/dist
+**/build
+
+# Misc Folders.
+**/.turbo
+
+# Misc Files.
+**/.eslintcache
+**/pnpm-lock.yaml
+**/yarn.lock
+**/package-lock.json

@@ -1,0 +1,57 @@
+{
+	"name": "fivem-serverstatsbot",
+	"version": "1.0.0",
+	"description": "A basic discord bot for FiveM to display server data.",
+	"repository": "https://github.com/itsxScrubz/fivem-serverstatsbot",
+	"private": true,
+	"type": "module",
+	"main": "./bin/index.js",
+	"packageManager": "pnpm@7.29.1+sha1.0bad188e84ffb283a93f29d4dee752f29c0ff845",
+	"engines": {
+		"node": ">=19.4.0",
+		"pnpm": ">=7.29.1",
+		"yarn": ">=1.22.19",
+		"npm": ">=9.2.0"
+	},
+	"author": {
+		"name": "Scrubz",
+		"eatsAss": true,
+		"website": "https://www.scrubz.dev",
+		"contact": {
+			"discord": "Scrubz#0001",
+			"email": "root@scrubz.dev"
+		}
+	},
+	"scripts": {
+		"start": "node .",
+		"watch": "tsup --watch",
+		"build": "tsup",
+		"lint": "eslint . --ext .ts --cache --cache-strategy content --fix",
+		"format": "prettier --write .",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"discord.js": "^14.7.1",
+		"dotenv": "^16.0.3"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.4.4",
+		"@commitlint/config-conventional": "^17.4.4",
+		"@types/node": "^18.14.1",
+		"@typescript-eslint/eslint-plugin": "^5.53.0",
+		"@typescript-eslint/parser": "^5.53.0",
+		"eslint": "^8.34.0",
+		"eslint-config-prettier": "^8.6.0",
+		"eslint-config-xo": "^0.43.1",
+		"eslint-import-resolver-typescript": "^3.5.3",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-unicorn": "^45.0.2",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.1.2",
+		"prettier": "^2.8.4",
+		"tsup": "^6.6.3",
+		"typescript": "^4.9.5"
+	}
+}

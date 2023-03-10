@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"declaration": false,
+		"declarationMap": false,
+		"strict": false,
+		"pretty": true,
+		"allowJs": false,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noImplicitAny": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"allowSyntheticDefaultImports": true,
+		"emitDecoratorMetadata": false,
+		"experimentalDecorators": false,
+		"paths": {
+			"~/*": ["./src/*"],
+			"~/types": ["./@types"]
+		}
+	},
+	"include": ["."]
+}

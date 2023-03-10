@@ -1,0 +1,6 @@
+useTabs: true
+arrowParens: avoid
+singleQuote: true
+jsxSingleQuote: true
+trailingComma: all
+bracketSameLine: true

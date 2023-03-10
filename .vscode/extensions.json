@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"EditorConfig.EditorConfig",
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"redhat.vscode-yaml",
+		"aaron-bond.better-comments"
+	]
+}
